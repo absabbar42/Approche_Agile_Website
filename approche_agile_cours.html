@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestion de projet</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                margin: 0;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 30px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .derss {
+                background-color: white;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 20px;
+                width: 280px;
+                position: relative;
+                z-index: 1;
+                transition: transform 0.2s;
+            }
+
+            .derss h3 {
+                margin-top: 0;
+                color: #234b77;
+            }
+
+            .derss p {
+                line-height: 1.5;
+            }
+
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 2;
+                pointer-events: none;
+            }
+
+            .derss:hover {
+                transform: scale(1.08);
+                z-index: 3;
+            }
+
+            body:has(.derss:hover) .overlay {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Gestion de projet - Définitions</h1>
+
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class="derss">
+                <h3>Projet</h3>
+                <p>Un projet est un ensemble d'activités organisées et ordonnées afin d'atteindre un objectif précis et de produire un résultat déterminé, avec des ressources et dans un délai défini.</p>
+            </div>
+
+            <div class="derss">
+                <h3>La gestion de projets</h3>
+                <p>La gestion de projet consiste à planifier, organiser et contrôler les ressources pour atteindre des objectifs précis, en respectant les délais, le budget et le périmètre défini.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Les ressources</h3>
+                <p>Les ressources d'un projet sont les éléments humains, matériels et financiers nécessaires pour réaliser les tâches et atteindre les objectifs du projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Livrable</h3>
+                <p>Un livrable de projet désigne un résultat attendu, tangible et mesurable, produit dans le cadre d'un projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Charte de projet</h3>
+                <p>Une charte de projet est un document officiel qui officialise l'existence d'un projet et définit ses objectifs, sa portée et ses parties prenantes.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Les parties prenantes</h3>
+                <p>Les parties prenantes d'un projet sont toutes les personnes, groupes ou organisations qui peuvent influencer le projet ou être influencés par lui, positivement ou négativement.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Les principaux rôles d’un projet</h3>
+                <p>Chef de projet : organise et suit l'avancement du projet.</p>
+                <p>Équipe de réalisation : effectue les tâches et produit les livrables.</p>
+                <p>Parties prenantes : participent au projet ou sont concernées par ses résultats.</p>
+            </div>
+
+            <div class="derss">
+                <h3>La matrice RACI</h3>
+                <p>La matrice RACI (Responsible, Accountable, Consulted, Informed) est un outil de management permettant d'assigner clairement les responsabilités pour chaque tâche d'un projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Caractéristiques de base d’un projet</h3>
+                <p>Objectif : le résultat à atteindre.</p>
+                <p>Livrable : le résultat à fournir.</p>
+                <p>Durée : le temps nécessaire.</p>
+                <p>Activités : les tâches à réaliser.</p>
+                <p>Ressources : les moyens nécessaires.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Les contraintes</h3>
+                <p>Coût / Budget : les limites financières.</p>
+                <p>Livrable / Qualité / Périmètre : ce qui doit être réalisé et son niveau de qualité.</p>
+                <p>Durée / Délai : le temps disponible pour terminer le projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Les étapes pour réaliser un projet</h3>
+                <p>1. Analyser les besoins.</p>
+                <p>2. Concevoir la solution.</p>
+                <p>3. Exécuter et réaliser le projet.</p>
+                <p>4. Tester le résultat.</p>
+                <p>5. Déployer et livrer le produit.</p>
+                <p>6. Assurer la maintenance.</p>
+            </div>
+
+            <div class="derss">
+                <h3>L’analyse des besoins</h3>
+                <p>L'analyse des besoins est un processus structuré visant à identifier, comprendre et formaliser les attentes des parties prenantes pour les transformer en exigences exploitables et mesurables.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Types des besoins</h3>
+                <p>Besoin explicite : exprimé directement par le client.</p>
+                <p>Besoin implicite : non exprimé directement, mais attendu ou nécessaire.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Cahier des charges</h3>
+                <p>Un cahier des charges est un document qui formalise les besoins, objectifs, contraintes et livrables d'un projet afin d'assurer une compréhension commune entre toutes les parties prenantes.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Périmètre d’un projet</h3>
+                <p>Le périmètre d'un projet est l'ensemble des objectifs, livrables, tâches et limites qui définissent précisément ce qui sera réalisé et ce qui ne le sera pas.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Le contexte de projet</h3>
+                <p>Le contexte d'un projet correspond à l'ensemble des informations qui caractérisent le projet, notamment son environnement, ses besoins, ses objectifs et ses contraintes.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Méthodes de gestion d’un projet</h3>
+                <p>Prévisible : méthodes classiques comme Cascade, V et Y.</p>
+                <p>Non prévisible : méthodes agiles comme Scrum et Kanban, qui facilitent l'adaptation aux changements.</p>
+            </div>
+
+            <div class="derss">
+                <h3>La méthode Cascade</h3>
+                <p>La méthode Cascade est une approche séquentielle de gestion de projet où chaque phase doit être terminée avant de passer à la suivante.</p>
+            </div>
+
+            <div class="derss">
+                <h3>La méthode V</h3>
+                <p>La méthode V est un modèle de gestion de projet séquentiel où chaque phase de conception est associée à une phase de vérification ou de validation correspondante, formant un schéma en V.</p>
+            </div>
+
+            <div class="derss">
+                <h3>La méthode Y</h3>
+                <p>La méthode Y est une méthode de conception qui part d'une base commune puis sépare le projet en branches selon les solutions à réaliser, avant leur intégration.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Art de vente</h3>
+                <p>L'art de vente désigne l'ensemble des techniques et des compétences nécessaires pour convaincre les clients d'acheter.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Clé de succès d’un projet</h3>
+                <p>Une des clés du succès d'un projet est la bonne compréhension des besoins du client.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Marketing fondamental</h3>
+                <p>Le marketing fondamental désigne l'ensemble des principes et pratiques visant à comprendre les besoins des consommateurs, à concevoir une offre adaptée et à satisfaire les clients.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Marketing digital</h3>
+                <p>Le marketing digital désigne toutes les techniques utilisées en ligne pour promouvoir une marque, un produit ou un service.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Agilité</h3>
+                <p>L'agilité est la capacité à s'adapter rapidement aux changements et à améliorer progressivement le travail.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Scrum</h3>
+                <p>Scrum est un framework de gestion de projet agile qui aide les équipes à organiser et superviser leur travail à travers des valeurs, des principes et des pratiques.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Kanban</h3>
+                <p>Kanban est une méthode de gestion des flux de travail qui permet de visualiser les tâches, de maximiser l'efficacité et d'atteindre l'amélioration continue.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Programmation extrême (XP)</h3>
+                <p>Extreme Programming (XP) est une méthodologie de développement de logiciels qui met l'accent sur la collaboration, l'adaptabilité et la fourniture de logiciels de haute qualité.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Le risque</h3>
+                <p>Un risque est un événement incertain qui peut avoir un impact positif ou négatif sur le projet, notamment en termes de budget, de délai, de qualité et de périmètre.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Types de risques</h3>
+                <p>Risques techniques : problèmes liés à la technologie.</p>
+                <p>Risques financiers : dépassement du budget.</p>
+                <p>Risques liés au délai : retards dans la réalisation.</p>
+                <p>Risques humains et organisationnels : problèmes d'équipe ou de communication.</p>
+                <p>Risques de sécurité : menaces sur les données et les systèmes.</p>
+                <p>Risques juridiques et réglementaires : non-respect des lois et obligations.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Risques techniques</h3>
+                <p>Problèmes liés à la technologie, aux logiciels ou à l'infrastructure utilisée dans le projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Risques financiers</h3>
+                <p>Dépassement du budget ou augmentation imprévue des coûts du projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Risques liés au délai</h3>
+                <p>Événements pouvant provoquer un retard dans la réalisation du projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Risques humains et organisationnels</h3>
+                <p>Difficultés liées aux membres de l'équipe, à la communication ou à l'organisation du travail.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Risques de sécurité</h3>
+                <p>Menaces qui peuvent compromettre la confidentialité, l'intégrité et la disponibilité des données.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Risques juridiques et réglementaires</h3>
+                <p>Non-respect des lois, des contrats ou des obligations réglementaires applicables au projet.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Diagramme de Gantt</h3>
+                <p>Un diagramme de Gantt est un outil de gestion de projet qui visualise les tâches d'un projet sur une chronologie à l'aide de barres horizontales représentant leur durée et leur avancement.</p>
+            </div>
+
+            <div class="derss">
+                <h3>Diagramme de PERT</h3>
+                <p>Un diagramme de PERT est un outil visuel de planification de projet utilisé pour planifier, organiser et coordonner les tâches d'un projet.</p>
+            </div>
+
+        </div>
+    </body>
+</html>
